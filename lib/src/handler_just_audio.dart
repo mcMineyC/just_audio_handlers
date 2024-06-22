@@ -17,6 +17,7 @@ class AudioHandlerJustAudio extends BaseAudioHandler
         this.defaultClass = defaultClass ?? '' {
     // This beautiful construct is copied from the audio_service example.
     _player.playbackEventStream.map(_transformEvent).pipe(playbackState);
+    print("Init");
   }
 
   @override
@@ -67,6 +68,7 @@ class AudioHandlerJustAudio extends BaseAudioHandler
   @override
   Future<void> playFromMediaId(String mediaId,
       [Map<String, dynamic>? extras]) async {
+    print("play media item");
     await prepareFromMediaId(mediaId, extras);
     await _player.play();
   }
