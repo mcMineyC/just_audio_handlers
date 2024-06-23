@@ -78,7 +78,7 @@ class AudioHandlerJustAudio extends BaseAudioHandler
       [Map<String, dynamic>? extras]) async {
     print("play media item");
     
-    await _player.setAudioSource(AudioSource.uri(item.id), initialPosition: Duration(seconds: 0);
+    await _player.setAudioSource(AudioSource.uri(Uri.parse(item.id)), initialPosition: Duration(seconds: 0));
     await _player.play();
   }
 
