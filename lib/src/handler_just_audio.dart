@@ -80,6 +80,7 @@ class AudioHandlerJustAudio extends BaseAudioHandler
     
     await _player.setAudioSource(AudioSource.uri(Uri.parse(item.id)), initialPosition: Duration(seconds: 0));
     await _player.play();
+    mediaItem.add(mediaItem);
   }
 
   @override
