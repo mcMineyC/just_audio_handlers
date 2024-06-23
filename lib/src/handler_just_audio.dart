@@ -76,7 +76,7 @@ class AudioHandlerJustAudio extends BaseAudioHandler
   @override
   Future<void> playMediaItem(MediaItem item,
       [Map<String, dynamic>? extras]) async {
-    print("play media item");
+    print("play media item uri: ${Uri.parse(item.id)}");
     
     await _player.setAudioSource(AudioSource.uri(Uri.parse(item.id)), initialPosition: Duration(seconds: 0));
     await _player.play();
