@@ -74,7 +74,7 @@ class AudioHandlerJustAudio extends BaseAudioHandler
   }
 
   @override
-  Future<void> playFromMediaItem(MediaItem item,
+  Future<void> playMediaItem(MediaItem item,
       [Map<String, dynamic>? extras]) async {
     print("play media item");
     
