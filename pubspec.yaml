@@ -27,9 +27,7 @@ dependencies:
       ref: master
   path_provider: ^2.0.2
   quiver: ^3.0.1
-
-dependency_overrides:
-    audio_service:
+  audio_service:
     git:
       url: https://github.com/mcMineyC/audio_service.git
       ref: minor
