@@ -10,7 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  audio_service: ^0.18.10
   just_audio: 
     git:
       url: https://github.com/mcMineyC/just_audio.git
